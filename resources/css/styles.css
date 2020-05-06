@@ -1,0 +1,134 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.nav {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav li {
+    margin: 0 2rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav #logo {
+    margin-left: 1rem;
+}
+
+#logo h1 {
+    font-size: 2rem;
+}
+
+.banner {
+    background-image: url(../images/banner.jpg);
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    color: whitesmoke;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.products {
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    height: auto;
+    width: 400px;
+    display: block;
+    margin: 1rem;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.team {
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer p {
+    display: inline-block;
+    margin: 1rem;
+}
+
+#copy {
+    float: right;
+}
+
+@media only screen and (max-width: 750px) {
+    html {
+        font-size: 8px;
+    }
+
+    .nav li {
+        margin: auto 0.5rem;
+        display: block;
+        line-height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 8px;
+    }
+
+    .nav li {
+        margin: auto 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+
+    .nav li {
+        margin: auto 1rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    html {
+        font-size: 14px;
+    }
+
+    .nav li {
+        margin: auto 1.5rem;
+    }
+}
